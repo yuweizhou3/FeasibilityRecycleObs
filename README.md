@@ -32,3 +32,5 @@ Once the above setup is done, the code is ready to be compiled and run.
 We provide the folder `inventory` that contains some of the required input and code to test the performance of Procedures ${\cal RF}$, $\text{Recycle}^{\cal B}$ and $\text{Restart}^{\rm max}$. 
 
 ### Data
+
+As discussed in the paper, the demand is generated following a Poisson random variable. 
