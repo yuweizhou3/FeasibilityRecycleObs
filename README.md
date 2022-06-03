@@ -11,7 +11,7 @@ This repository contains the code for the experiments in the paper "Finding Feas
 
 ## <a name="procedure"/> Code for Proposed Procedures
 
-We provide the folder `procedures` that contain the code for Procedure ${\cal RF}$ and the other four alternative procedures ($\text{Recycle}^{\cal B}$, $\text{Restart}^{\rm prob}$, $\text{Restart}^{\rm sum}$, and $\text{Restart}^{\rm max}$). The files are as follows. 
+We provide the folder `procedures` that contains the code for Procedure ${\cal RF}$ and the other four alternative procedures ($\text{Recycle}^{\cal B}$, $\text{Restart}^{\rm prob}$, $\text{Restart}^{\rm sum}$, and $\text{Restart}^{\rm max}$). The files are as follows. 
 1. `rf.cpp`: this code is used to test the performance of Procedure ${\cal RF}$. 
 2. `recycle.cpp`: this code is used to test the performance of Procedure $\text{Recycle}^{\cal B}$. 
 3. `restart_prob.cpp`: this code is used to test the performance of Procedure $\text{Restart}^{\rm prob}$.
@@ -26,3 +26,9 @@ As the inputs for all the files are the same, we only discuss how to run `rf.cpp
 5. Adjust continuation region variable `R[i][j]` (lines 141 and 190) depending on whether the feasibility check is based on triangular-shaped continuation region or straight-line continuation region. 
 
 Once the above setup is done, the code is ready to be compiled and run.
+
+## <a name="procedure"/> Inventory Example
+
+We provide the folder `inventory` that contains some of the required input and code to test the performance of Procedures ${\cal RF}$, $\text{Recycle}^{\cal B}$ and $\text{Restart}^{\rm max}$. 
+
+### Data
