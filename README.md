@@ -17,3 +17,6 @@ We provide the folder `procedures` that contain the code for Procedure ${\cal RF
 3. `restart_prob.cpp`: this code is used to test the performance of Procedure $\text{Restart}^{\rm prob}$.
 4. `restart_sum.cpp`: this code is used to test the performance of Procedure $\text{Restart}^{\rm sum}$.
 5. `restart_max.cpp`: this code is used to test the performance of Procedure $\text{Restart}^{\rm max}$.
+
+As the inputs for all the files are the same, we only discuss how to run `rf.cpp`. The rest four code follows the same instruction. 
+1. Decide the number of systems, number of constraints, and the number of thresholds on each constraint. 
