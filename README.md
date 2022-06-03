@@ -23,3 +23,6 @@ As the inputs for all the files are the same, we only discuss how to run `rf.cpp
 2. Decide the correlation between each pair of constraints. Adjust function `read_chol_matrix()` (line 288) to incorporate the chosen correlation and the number of constraints. This function reads a matrix obtained from Cholesky decomposition and is further used to generate observations.
 3. Decide the threshold values for each constraint and input them into function `configuration()` (line 367), i.e., adjust variable `q[1][m][j]`.
 4. Compute the implementation parameter $\eta$ as discussed in the paper. Input the value of $\eta$ to the variable `eta[i]` (line 81). Depending on how the user wants to set $\eta$, the variable `eta[i]` can be based on systems or based on constraints. 
+5. Adjust continuation region variable `R[i][j]` (lines 141 and 190) depending on whether the feasibility check is based on triangular-shaped continuation region or straight-line continuation region. 
+
+Once the above setup is done, the code is ready to be compiled and run.
