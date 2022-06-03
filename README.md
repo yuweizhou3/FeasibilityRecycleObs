@@ -11,4 +11,4 @@
 
 ## <a name="overview"/> Overview
 
-This repository contains the code for the experiments in the paper "Finding Feasible Systems for Subjective Constraints Using Recycled Observations". 
+This repository contains the code for the experiments in the paper "Finding Feasible Systems for Subjective Constraints Using Recycled Observations". We provide the instruction on how to run the codes for Procedure RF, Procedure Recycle, straight-forward procedures. We finally include a discussion on how we generate data and perform the testing for the inventory example. 
