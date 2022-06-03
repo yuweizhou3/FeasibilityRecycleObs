@@ -12,4 +12,5 @@ This repository contains the code for the experiments in the paper "Finding Feas
 ## <a name="procedure"/> Code for Proposed Procedures
 
 We provide the folder `procedures` that contain the code for Procedure RF and the other four alternative procedures (Recycle, Restart prob, Restart sum, and Restart max). The files are as follows. 
-1. `rf.cpp`: this code is used to test the performance of Procedure RF. 
+1. `rf.cpp`: this code is used to test the performance of Procedure $RF$. 
+2. `restart_prob.cpp`: this code is used to test the performance of Procedure Restart prob.
