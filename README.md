@@ -6,18 +6,11 @@
 
 #### <sup>2</sup> Department of Industrial Engineering, Hanyang University, Seoul, South Korea
 
-## Table of Contents
-- [Overview](#overview)
-- [Code for Proposed Procedures](#procedure)
-- [Code for Inventory Example](#inventory)
-
-## <a name="overview"/> Overview
-
 This repository contains the code and the results for the experiments in Section 6 of the paper "Finding Feasible Systems for Subjective Constraints Using Recycled Observations".
 
-## <a name="procedure"/> Code for Proposed Procedures
+## 1. Proposed Procedures
 
-We provide the folder `procedures` that contains the code for the proposed procedure $`RF`$.
+We provide the folder `procedures` to contain the code for the proposed procedure ${\cal RF}$ and the other four competing procedures ${\cal RF}$
 
 1. `rf.cpp`: this code is used to test the performance of Procedure 
 2. `recycle.cpp`: this code is used to test the performance of Procedure 
@@ -26,7 +19,7 @@ We provide the folder `procedures` that contains the code for the proposed proce
 5. `restart_sum.cpp`: this code is used to test the performance of Procedure 
 Note that the experiments in Section 6 are only contain by procedures 
 
-## <a name="inventory"/> Inventory Example
+## 2. Inventory Example
 
 We provide the folder `inventory` that contains some of the required input and code to test the performance of 
 
