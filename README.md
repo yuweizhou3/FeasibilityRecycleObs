@@ -14,9 +14,10 @@ This repository contains the code for the experiments in the paper "Finding Feas
 We provide the folder `procedures` that contains the code for Procedure ${\cal RF}$ and the other four alternative procedures ($\text{Recycle}^{\cal B}$, $\text{Restart}^{\rm prob}$, $\text{Restart}^{\rm sum}$, and $\text{Restart}^{\rm max}$). The files are as follows. 
 1. `rf.cpp`: this code is used to test the performance of Procedure ${\cal RF}$. 
 2. `recycle.cpp`: this code is used to test the performance of Procedure $\text{Recycle}^{\cal B}$. 
-3. `restart_prob.cpp`: this code is used to test the performance of Procedure $\text{Restart}^{\rm prob}$.
-4. `restart_sum.cpp`: this code is used to test the performance of Procedure $\text{Restart}^{\rm sum}$.
-5. `restart_max.cpp`: this code is used to test the performance of Procedure $\text{Restart}^{\rm max}$.
+3. `restart_max.cpp`: this code is used to test the performance of Procedure $\text{Restart}^{\rm max}$.
+4. `restart_prob.cpp`: this code is used to test the performance of Procedure $\text{Restart}^{\rm prob}$.
+5. `restart_sum.cpp`: this code is used to test the performance of Procedure $\text{Restart}^{\rm sum}$.
+Note that the experiments in the paper only contains procedures ${\cal RF}$, $\text{Recycle}^{\cal B}$, and $\text{Restart}^{\rm max}$.
 
 As the inputs for all the files are the same, we only discuss how to run `rf.cpp`. The rest four code follows the same instruction. 
 1. Decide the number of systems, number of constraints, and the number of thresholds on each constraint. Input those information to `NumSys`, `NumConstraint` (line 18). If the number of thresholds are the same for all constraints, input this number for `NumThreshold` (line 20). Otherwise, input the largest number of thresholds considered among all constraints for `NumThreshold` and adjust the variable `surviveThreshold[j]` (line 121) to incorporate the actual number of thresholds on each constraint.  
