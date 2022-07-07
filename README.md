@@ -11,7 +11,7 @@ This repository contains the code for the experiments in the paper "Finding Feas
 
 ## <a name="procedure"/> Code for Proposed Procedures
 
-We provide the folder `procedures` that contains the code for Procedure $$x^2$$ and the other four alternative procedures ($\text{Recycle}^{\cal B}$, $\text{Restart}^{\rm prob}$, $\text{Restart}^{\rm sum}$, and $\text{Restart}^{\rm max}$). The files are as follows. 
+We provide the folder `procedures` that contains the code for Procedure ${\cal RF}$ and the other four alternative procedures ($\text{Recycle}^{\cal B}$, $\text{Restart}^{\rm prob}$, $\text{Restart}^{\rm sum}$, and $\text{Restart}^{\rm max}$). The files are as follows. 
 1. `rf.cpp`: this code is used to test the performance of Procedure ${\cal RF}$. 
 2. `recycle.cpp`: this code is used to test the performance of Procedure $\text{Recycle}^{\cal B}$. 
 3. `restart_max.cpp`: this code is used to test the performance of Procedure $\text{Restart}^{\rm max}$.
@@ -28,10 +28,10 @@ As the inputs for all the files are the same, we only discuss how to run `rf.cpp
 
 Once the above setup is done, the code is ready to be compiled and run.
 
-## <a name="procedure"/> Inventory Example
+## <a name="inventory"/> Inventory Example
 
 We provide the folder `inventory` that contains some of the required input and code to test the performance of Procedures ${\cal RF}$, $\text{Recycle}^{\cal B}$ and $\text{Restart}^{\rm max}$. 
 
 ### Data
 
-As discussed in the paper, the demand is generated following a Poisson random variable. 
+The inventory example requires an additional files that contains the mean values for the two performance measures we considered. 
