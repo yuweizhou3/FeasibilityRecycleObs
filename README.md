@@ -17,7 +17,8 @@ This repository contains the code and the results for the experiments in Section
 
 ## <a name="procedure"/> Code for Proposed Procedures
 
-We provide the folder `procedures` that contains the code for Procedure and the other four alternative procedures The files are as follows. 
+We provide the folder `procedures` that contains the code for the proposed procedure $`RF`$.
+
 1. `rf.cpp`: this code is used to test the performance of Procedure 
 2. `recycle.cpp`: this code is used to test the performance of Procedure 
 3. `restart_max.cpp`: this code is used to test the performance of Procedure 
