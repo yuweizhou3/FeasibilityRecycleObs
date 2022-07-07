@@ -1,4 +1,12 @@
-# Online Supplement for Finding Feasible Systems for Subjective Constraints Using Recycled Observations
+# Online Supplement of "Finding Feasible Systems for Subjective Constraints Using Recycled Observations"
+
+#### by Yuwei Zhou<sup>1</sup>, Sigrun Andradottir<sup>2</sup>, Seong-Hee Kim<sup>2</sup>, and Chuljin Park<sup>3</sup>
+
+#### <sup>1</sup> Booth School of Business, The University of Chicago, Chicago, IL
+
+#### <sup>2</sup> H. Milton Stewart School of Industrial and Systems Engineering, Georgia Institute of Technology, Atlanta, GA
+
+#### <sup>3</sup> Department of Industrial Engineering, Hanyang University, Seoul, South Korea
 
 ## Table of Contents
 - [Overview](#overview)
