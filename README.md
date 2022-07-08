@@ -18,7 +18,7 @@ We provide the folder `procedures` to contain the codes for the proposed procedu
 * `restart_sum.cpp`: this code is used to test the performance of Procedure ${\rm Restart}^{\rm sum}$.
 * `restart_prob.cpp`: this code is used to test the performance of Procedure ${\rm Restart}^{\rm prod}$.
 
-We use a 32-bits Random number generator U(0,1), `MRG32k3a()`, to generate independent and identically
+We use a 32-bits random number generator U(0,1), `MRG32k3a()`, to generate independent and identically
 uniformly distributed random variates over interval (0,1) which is further used to generate normal random variables. The complete code for this random number generator can be found [here](http://simul.iro.umontreal.ca/rng/MRG32k3a.c).
 Note that Section 6 only provides the performance of 
 ${\rm Restart}^{\rm max}$ among three restart procedures. This is because 
