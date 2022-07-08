@@ -45,6 +45,10 @@ $\ell=1,\ldots,s$ as described in the paper. Modify the values of variable `eta[
 
 ## 2. Inventory Example
 
-We provide the folder `inventory` that contains some of the required input and code to test the performance of 
+We provide the folder `inventory` that contains the code for different procedures and a required input file. Note that we include two separate cases depending on whether CRN is applied. 
 
-The inventory example requires an additional files that contains the mean values for the two performance measures we considered. 
+To run the code, the file `TrueValue.txt`, that contains the estimated mean performance of the two performance measures, is required. The values in this file is obtained through a Markov chain model as discussed in the paper. 
+
+To test the case when CRN is applied, we add a function `generate_demand()` (line 99 of `rf.cpp` as an example) to generate demand that is shared by all systems (which allows the systems to receive demand generated based on the same random seeds). We also need modify function `generate_one_obs()` (line 343 of `rf.cpp`) for the variable `Demand`.
+
+In order to retrieve the identical experimental results as in the paper, we run the code in parallel by setting different random seeds. More specifically, we run ten simulation in parallel and the number of macro-replications for each simulation is 10,000. The random seeds of each simulation run is set separately as in lines 39-47 of `rf.cpp`.
