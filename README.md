@@ -18,7 +18,10 @@ We provide the folder `procedures` to contain the codes for the proposed procedu
 * `restart_sum.cpp`: this code is used to test the performance of Procedure ${\rm Restart}^{\rm sum}$.
 * `restart_prob.cpp`: this code is used to test the performance of Procedure ${\rm Restart}^{\rm prod}$.
 
-Note that Section 6 only provides the performance of ${\rm Restart}^{\rm max}$ among three restart procedures. This is because 
+We use a 32-bits Random number generator U(0,1), `MRG32k3a()`, to generate independent and identically
+uniformly distributed random variates over interval (0,1) which is further used to generate normal random variables. The complete code for this random number generator can be found [here](http://simul.iro.umontreal.ca/rng/MRG32k3a.c).
+Note that Section 6 only provides the performance of 
+${\rm Restart}^{\rm max}$ among three restart procedures. This is because 
 ${\rm Restart}^{\rm max}$ donimates the other two restart procedures. 
 
 We discuss how to set the inputs to run the codes. Note that the codes for all five procedures use the same structure for user's input, therefore, we only discuss how to set inputs for `rf.cpp`.
@@ -41,7 +44,9 @@ $\ell=1,\ldots,s$ as described in the paper. Modify the values of variable `eta[
   * Choose the desired input file `cholMatrix_rhoX.txt`, where X is the correlation between each pair of constraints. 
   * Depending on the number of constraints considered, choose the corrent number of inputs for variable `chol_matrix` (comment out unnecessary variables).
 
-5. Decide the variance configuration between constraints. Modify variable `system_info[i]` from function `configuration()` (line 382). We set `system_info[i]=1,2,3` for CV, IV, DV, respectively.  
+5. Decide the variance configuration between constraints. Modify variable `system_info[i]` from function `configuration()` (line 382). We set `system_info[i]=1,2,3` for CV, IV, DV, respectively. 
+
+The users may choose their own random seeds to generate observations for the feasibility check (by modifying the values of seeds in line 36). In order to retrieve the identical experimental results as in the paper, the users need to use the same random seeds as in the codes.
 
 ## 2. Inventory Example
 
