@@ -22,15 +22,26 @@ Note that Section 6 only provides the performance of ${\rm Restart}^{\rm max}$ a
 ${\rm Restart}^{\rm max}$ donimates the other two restart procedures. 
 
 We discuss how to set the inputs to run the code. Note that the code for all five procedures uses the same structure for user's input, therefore, we only discuss how to set inputs for `rf.cpp`.
-1. Input values for the following variables depending on the problem. 
-  * `NumSys`
-  * `NumConstraint`
-  * `Nnot`
-  * `NumMacro`
-2. Choose the value for IZ-parameter $\epsilon_\ell$, where 
-$\ell=1,\ldots,s$.
+1. Input values for the following variables depending on the problem (starting from line 18). 
+  * `Nnot`: value of $n_0$.
+  * `NumMacro`: number of macro-replications.
+  * `NumSys`: number of systems considered.
+  * `NumConstraint`: number of constraints of the systems
+  * `NumThreshold`: maximum number of thresholds of all constraints.
+  
+2. Choose the value for IZ-parameter $\epsilon_\ell$ and thresholds $q_{\ell m}$, where 
+$\ell=1,\ldots,s$ and $m=1,\ldots,d_\ell$. Modify function `configuration()` (starting from line 366) for the following variables. 
+  * `epsilon[j]`: values of $\epsilon_j$.
+  * `q[m][j]`: values of $q_{j m_j}$.
+  
 3. Choose the shape of continuation region and compute $\eta_\ell$, where 
-$\ell=1,\ldots,s$ as described in the paper.
+$\ell=1,\ldots,s$ as described in the paper. Modify the values of variable `eta[j]` (starting from line 71). Depending on whether the continuation region is chosen as triangular-shaped or straight-line, modify `R[i][j]` (lines 149 and 195). 
+
+4. Decide the correlation between constraints. Modify the following variables from function `read_chol_matrix()`. 
+  * Choose the correct input file `cholMatrix_rhoX.txt`, where X is the chosen correlation between each pair of constraints. 
+  * Depending on the number of constraints considered, choose the corrent number of inputs for variable `chol_matrix`.
+
+5. Decide the variance configuration between constraints. Modify variable `system_info[i]` from `configuration()` (line 382). We set `system_info[i]=1,2,3` for CV, IV, DV, respectively.  
 
 ## 2. Inventory Example
 
